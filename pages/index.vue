@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">Class Store Demo</h1>
+      <h1 class="title">Vue Class Store</h1>
+      <h4>Running in Nuxt</h4>
       <div class="links">
         <section v-for="group in links" :key="group.name">
           <p>{{ group.title }}</p>
@@ -14,6 +15,17 @@
           </ul>
         </section>
       </div>
+    </div>
+    <div>
+      <p>GitHub</p>
+      <ul>
+        <li>
+          <a href="https://github.com/davestewart/vue-class-store" target="_blank">Vue Class Store</a>
+        </li>
+        <li>
+          <a href="https://github.com/davestewart/nuxt-class-store" target="_blank">This demo</a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>

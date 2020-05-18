@@ -8,6 +8,13 @@
 
 This repo is a demo, using the Vue package.
 
+## Online demo
+
+Go to:
+
+- https://codesandbox.io/s/github/davestewart/nuxt-class-store?file=/pages/examples/basic.vue
+
+
 ## Setup
 
 ```bash
