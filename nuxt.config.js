@@ -13,8 +13,7 @@ export default {
     '~/assets/styles/index.css'
   ],
   plugins: [
-    '~/plugins/vue-class-store',
-    '~/plugins/globals'
+    '~/plugins/vue-class-store'
   ],
   buildModules: [
     '@nuxt/typescript-build'

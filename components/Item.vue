@@ -1,5 +1,5 @@
 <template>
-  <div class="item" :class="classes">
+  <div :id="`item-${model.id}`" class="item" :class="classes">
     <label>
       <input type="checkbox" :checked="isSelected" @change="toggleItem">
       {{ model.title }}
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { ItemModel } from './ItemsStore'
+import { ItemModel } from '~/store/Item'
 
 export default {
   inject: [

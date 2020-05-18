@@ -20,7 +20,7 @@
 
 <script>
 import VueStore from 'vue-class-store'
-import { page } from '../../index'
+import { page } from '../index'
 
 @VueStore
 class RandomStore {

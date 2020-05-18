@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <p>Simple and intuitive reactive, computed, and watched properties, within a single, reusable, extensible model</p>
     <hr>
-    <RectangleView
+    <Rectangle
       :width.sync="model.width"
       :height.sync="model.height"
       :area="model.area"
@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import { page } from '../../index'
-import { RectangleStore } from './Rectangle'
+import { page } from '../index'
+import { RectangleStore } from '~/store/Rectangle'
 
 export default {
   extends: page('Basic Store'),

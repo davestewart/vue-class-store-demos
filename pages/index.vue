@@ -35,14 +35,10 @@ export default Vue.extend({
           basic: 'Basic store',
           inline: 'Inline store',
           inherit: 'Store inheritance',
-          global: 'Global store',
+          global: 'Global store'
         }),
         group('Caveats', {
-          random: 'Randomised data',
-        }),
-        group('Issues', {
-          model: 'Vue model',
-          component: 'Normal component'
+          random: 'Randomised data'
         })
       ]
     }
