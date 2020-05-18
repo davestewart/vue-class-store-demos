@@ -13,9 +13,9 @@
 </template>
 
 <script>
+import { page } from '../../index'
 import { ItemsStore } from './ItemsStore'
 import Item from './Item.vue'
-import { page } from '..'
 
 export default {
   extends: page('Global Store'),

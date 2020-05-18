@@ -1,10 +1,9 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>One class extends another's reactive, computed and watched properties, adding and modifying some of its own</p>
+    <p>Convert any class into a reactive, computed store in one line</p>
     <hr>
     <RectangleView
-      name="Square"
       :width.sync="model.width"
       :height.sync="model.height"
       :area="model.area"
@@ -15,15 +14,16 @@
 </template>
 
 <script>
-import { SquareStore } from './Square'
-import { page } from '..'
+import VueStore from 'vue-class-store'
+import { page } from '../../index'
+import { Rectangle } from '../basic/Rectangle'
 
 export default {
-  extends: page('Store Inheritance'),
+  extends: page('Inline Store'),
 
   computed: {
     model () {
-      return new SquareStore(20)
+      return VueStore.create(new Rectangle(20, 10))
     }
   }
 }

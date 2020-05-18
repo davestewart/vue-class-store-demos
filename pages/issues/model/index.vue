@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>Vanilla Vue Model, no plugins</p>
+    <p>Vanilla Vue Model, no plugins – doesn't work with <code>generate</code>. Why?</p>
     <hr>
     <section>
       <input type="number" v-model="model.value">
@@ -15,7 +15,7 @@
 
 <script>
 import Vue from 'vue'
-import { page } from '..'
+import { page } from '../../index'
 
 export default {
   extends: page('Vue Model'),

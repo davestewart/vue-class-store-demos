@@ -1,9 +1,10 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>Simple and intuitive reactive, computed, and watched properties, within a single, reusable, extensible model</p>
+    <p>One class extends another's reactive, computed and watched properties, adding and modifying some of its own</p>
     <hr>
     <RectangleView
+      name="Square"
       :width.sync="model.width"
       :height.sync="model.height"
       :area="model.area"
@@ -14,15 +15,15 @@
 </template>
 
 <script>
-import { RectangleStore } from './Rectangle'
-import { page } from '..'
+import { page } from '../../index'
+import { SquareStore } from './Square'
 
 export default {
-  extends: page('Basic Store'),
+  extends: page('Store Inheritance'),
 
   computed: {
     model () {
-      return new RectangleStore(20, 10)
+      return new SquareStore(20)
     }
   }
 }

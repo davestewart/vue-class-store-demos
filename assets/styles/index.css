@@ -20,3 +20,7 @@ ul {
 li {
   margin-bottom: .2em;
 }
+
+.is-warning {
+  color: red;
+}

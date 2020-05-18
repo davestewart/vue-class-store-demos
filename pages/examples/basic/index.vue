@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>Convert any class into a reactive, computed store in one line</p>
+    <p>Simple and intuitive reactive, computed, and watched properties, within a single, reusable, extensible model</p>
     <hr>
     <RectangleView
       :width.sync="model.width"
@@ -14,16 +14,15 @@
 </template>
 
 <script>
-import VueStore from 'vue-class-store'
-import { Rectangle } from '../basic/Rectangle'
-import { page } from '..'
+import { page } from '../../index'
+import { RectangleStore } from './Rectangle'
 
 export default {
-  extends: page('Inline Store'),
+  extends: page('Basic Store'),
 
   computed: {
     model () {
-      return VueStore.create(new Rectangle(20, 10))
+      return new RectangleStore(20, 10)
     }
   }
 }
