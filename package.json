@@ -1,0 +1,11 @@
+{
+  "name": "vue-class-store-demos",
+  "private": true,
+  "scripts": {
+    "install-demos": "cd vue-2 && yarn i && cd ../vue-3 && yarn i && cd ../nuxt && yarn i",
+    "link-source": "cd vue-2 && yarn link vue-class-store && cd ../vue-3 && yarn link vue-class-store && cd ../nuxt && yarn link vue-class-store",
+    "vue-2": "cd vue-2 && yarn run serve",
+    "vue-3": "cd vue-3 && yarn run serve",
+    "nuxt": "cd nuxt && yarn run dev"
+  }
+}
