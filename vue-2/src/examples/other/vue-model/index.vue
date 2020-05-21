@@ -26,6 +26,6 @@ export default {
     model () {
       return makeRectangle(20, 10)
     }
-  },
+  }
 }
 </script>

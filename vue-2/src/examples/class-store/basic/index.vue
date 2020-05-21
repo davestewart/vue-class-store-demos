@@ -26,6 +26,6 @@ export default {
     model () {
       return new RectangleStore(20, 10)
     }
-  },
+  }
 }
 </script>

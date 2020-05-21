@@ -12,7 +12,7 @@ const actions = {
     commit('height', Math.random() * height)
   },
 
-  log ({ commit }, value) {
+  log ({ commit }, value: string) {
     commit('logs', value)
   }
 }

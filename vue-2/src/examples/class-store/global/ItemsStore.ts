@@ -18,7 +18,7 @@ export class ItemsStore {
 
   public selectedIds: number[] = []
 
-  constructor(numItems: number = 0)  {
+  constructor (numItems = 0) {
     for (let i = 0; i < numItems; i++) {
       this.addItem()
     }

@@ -4,7 +4,7 @@
     <section v-for="folder in folders" :key="folder.title">
       <p>{{ folder.title }}</p>
       <ul>
-        <li v-for="route in folder.routes":key="route.path">
+        <li v-for="route in folder.routes" :key="route.path">
           <router-link :to="route.path">{{ route.meta.title }}</router-link>
         </li>
       </ul>
@@ -24,16 +24,15 @@ export default {
         const folder = route.meta.folder
         if (!folders[folder]) {
           folders[folder] = {
-            title: folder.replace(/\W/g, ' ').replace(/\w/, c =>c.toUpperCase()),
+            title: folder.replace(/\W/g, ' ').replace(/\w/, c => c.toUpperCase()),
             routes: []
           }
         }
         folders[folder].routes.push(route)
         return folders
       }, {})
-
     }
-  },
+  }
 }
 
 </script>

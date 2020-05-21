@@ -18,7 +18,7 @@ export default {
     name: {
       type: String,
       default: 'Rectangle'
-    },
+    }
   }
 }
 </script>

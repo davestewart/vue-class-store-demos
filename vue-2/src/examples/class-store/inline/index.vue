@@ -26,6 +26,6 @@ export default {
     model () {
       return VueStore.create(new Rectangle(20, 10))
     }
-  },
+  }
 }
 </script>

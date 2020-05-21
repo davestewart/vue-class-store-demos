@@ -6,7 +6,7 @@ export function makeRectangle (width, height) {
       return {
         width: width,
         height: height,
-        logs: [],
+        logs: []
       }
     },
 
