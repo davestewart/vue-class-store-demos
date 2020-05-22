@@ -8,7 +8,7 @@ export default {
       ? slots.default[0].text.trim().split(/[\r\n]+/).map(line => line.trim()).join('\n')
       : ''
     return h('div', { class: 'codeView' }, [
-      h('p', 'Check the files the source panel:'),
+      h('p', 'Check the files in the source panel:'),
       h('pre', text)
     ])
   }

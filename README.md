@@ -10,6 +10,10 @@
 
 This repo provides demos for [Vue Class Store](https://github.com/davestewart/vue-class-store) for Vue 2, Vue 3 and Nuxt.
 
+Currently, only the Nuxt Demo will run on Code Sandbox (all run locally; I'm investigating):
+
+- https://codesandbox.io/s/github/davestewart/vue-class-store-demos/tree/master/nuxt
+
 Each of the demos shows core Vue Class Store functionality in comparison to alternate state management functionality:
 
 Class Store:
@@ -19,7 +23,7 @@ Class Store:
 - [Class Store with Inheritance](vue-2/src/examples/class-store/inherit)
 - [Global Class Store](vue-2/src/examples/class-store/global)
 
-Alternatives:
+Alternatives (installed on Vue 2 demo only):
 
 - [Vue Component](vue-2/src/examples/other/vue-component)
 - [Vue Model](vue-2/src/examples/other/vue-model)

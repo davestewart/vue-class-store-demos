@@ -14,6 +14,6 @@ function updateLog () {
   store.dispatch('rectangle/log', `Area is ${store.getters['rectangle/area']}`)
 }
 
-store.watch((state: any) => state.rectangle.width, updateLog)
+store.watch((state) => (state as any).rectangle.width, updateLog)
 
 export default store
