@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "nuxt": "^2.0.0",
-    "vue-class-store": "^2.0.0"
+    "vue-class-store": "^2.0.4"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
