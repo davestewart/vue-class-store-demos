@@ -2,10 +2,9 @@ import VueStore from 'vue-class-store'
 import { Rectangle } from '../basic/Rectangle'
 
 export class Square extends Rectangle {
-
-  constructor (size) {
+  constructor (size: number) {
     super(size, size)
-    this.log(`Square constructor called!`)
+    this.log('Square constructor called!')
   }
 
   'on:width' = 'update'
@@ -16,7 +15,7 @@ export class Square extends Rectangle {
     this.width = this.height = Math.random() * 20
   }
 
-  update (value) {
+  update (value: number) {
     this.width = value
     this.height = value
   }
@@ -25,8 +24,8 @@ export class Square extends Rectangle {
 @VueStore
 export class SquareStore extends Square {
   // there's no need to provide a constructor here, this is just to log some output
-  constructor (size) {
-    super(size);
-    this.log(`SquareStore constructor called!`)
+  constructor (size: number) {
+    super(size)
+    this.log('SquareStore constructor called!')
   }
 }

@@ -38,7 +38,7 @@ export default {
 
     area () {
       return this.$store.getters['rectangle/area']
-    },
+    }
   },
 
   mounted () {
@@ -60,7 +60,7 @@ export default {
 
     onHeight (value) {
       this.$store.commit('rectangle/height', value)
-    },
-  },
+    }
+  }
 }
 </script>

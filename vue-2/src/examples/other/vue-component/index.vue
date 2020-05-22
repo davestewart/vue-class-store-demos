@@ -41,7 +41,7 @@ export default {
   },
 
   created () {
-    this.log(`Vue Component created!`)
+    this.log('Vue Component created!')
   },
 
   methods: {

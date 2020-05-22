@@ -11,7 +11,7 @@
     <button @click="model.addItem">Add Item</button>
     <button @click="model.toggleRandom">Toggle Random</button>
     <div class="items">
-      <Item v-for="item in model.items" :model="item" />
+      <Item v-for="item in model.items" :key="item.id" :model="item" />
     </div>
   </div>
 </template>
@@ -24,7 +24,7 @@ export default {
   name: 'GlobalClassStore',
 
   components: {
-    Item: Item,
+    Item: Item
   },
 
   provide () {
@@ -37,7 +37,7 @@ export default {
     model () {
       return new ItemsStore(2)
     }
-  },
+  }
 }
 </script>
 

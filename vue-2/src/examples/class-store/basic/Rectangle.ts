@@ -7,17 +7,17 @@ export class Rectangle {
 
   public logs: string[] = []
 
-  constructor(width = 2, height = 2)  {
+  constructor (width = 2, height = 2) {
     this.width = width
     this.height = height
-    this.log(`Rectangle constructor called!`)
+    this.log('Rectangle constructor called!')
   }
 
   get area () {
     return this.width * this.height
   }
 
-  'on:area' (value) {
+  'on:area' (value: number) {
     this.log(`Area is ${value}`)
   }
 
@@ -26,7 +26,7 @@ export class Rectangle {
     this.height = Math.random() * 10
   }
 
-  log (message) {
+  log (message: string) {
     this.logs.push(`${new Date().toISOString().match(/\d{2}:\d{2}:\d{2}/)}: ${message}`)
   }
 }
@@ -34,8 +34,8 @@ export class Rectangle {
 @VueStore
 export class RectangleStore extends Rectangle {
   // there's no need to provide a constructor here, this is just to log some output
-  constructor (width, height) {
-    super(width, height);
-    this.log(`RectangleStore constructor called!`)
+  constructor (width: number, height: number) {
+    super(width, height)
+    this.log('RectangleStore constructor called!')
   }
 }

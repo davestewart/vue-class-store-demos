@@ -28,6 +28,6 @@ export default {
     model () {
       return new SquareStore(20)
     }
-  },
+  }
 }
 </script>

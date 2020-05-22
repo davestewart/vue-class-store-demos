@@ -19,7 +19,7 @@ export default {
   ],
   build: {
     extend (config) {
-      config.resolve.alias.vue$ = path.resolve(__dirname, '../node_modules/vue/')
+      config.resolve.alias.vue$ = path.resolve(__dirname, 'node_modules/vue/')
     }
   }
 }
