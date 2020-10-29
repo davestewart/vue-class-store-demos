@@ -14,6 +14,7 @@ function updateLog () {
   store.dispatch('rectangle/log', `Area is ${store.getters['rectangle/area']}`)
 }
 
+/* eslint-disable */
 store.watch((state) => (state as any).rectangle.width, updateLog)
 
 export default store

@@ -3,8 +3,8 @@
     <p>Independent global and local data working together, with no special setup</p>
     <CodeView>
       examples/class-store/global/index.vue
-      examples/class-store/global/Item.vue
       examples/class-store/global/ItemsStore.ts
+      examples/class-store/global/Item.vue
     </CodeView>
     <hr>
     <p>Managing {{ model.items.length }} items ( {{ model.numSelected }} selected )</p>
@@ -29,7 +29,7 @@ export default {
 
   provide () {
     return {
-      $store: this.model
+      $items: this.model
     }
   },
 

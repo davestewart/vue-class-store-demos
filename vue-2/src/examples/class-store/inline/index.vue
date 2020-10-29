@@ -3,6 +3,7 @@
     <p>Convert any class into a reactive, computed store in one line</p>
     <CodeView>
       examples/class-store/inline/index.vue
+      examples/class-store/basic/Rectangle.ts
     </CodeView>
     <hr>
     <RectangleView

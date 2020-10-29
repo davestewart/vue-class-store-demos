@@ -1,5 +1,3 @@
-import VueStore from 'vue-class-store'
-
 export class Rectangle {
   public width: number
 
@@ -28,14 +26,5 @@ export class Rectangle {
 
   log (message: string) {
     this.logs.push(`${new Date().toISOString().match(/\d{2}:\d{2}:\d{2}/)}: ${message}`)
-  }
-}
-
-@VueStore
-export class RectangleStore extends Rectangle {
-  // there's no need to provide a constructor here, this is just to log some output
-  constructor (width: number, height: number) {
-    super(width, height)
-    this.log('RectangleStore constructor called!')
   }
 }

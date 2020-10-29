@@ -12,7 +12,7 @@ import { ItemModel } from './ItemsStore'
 
 export default {
   inject: [
-    '$store'
+    '$items'
   ],
 
   props: {
@@ -21,7 +21,7 @@ export default {
 
   computed: {
     isSelected () {
-      return this.$store.selectedIds.includes(this.model.id)
+      return this.$items.selectedIds.includes(this.model.id)
     },
 
     classes () {
@@ -33,7 +33,7 @@ export default {
 
   methods: {
     toggleItem () {
-      this.$store.toggleItem(this.model.id)
+      this.$items.toggleItem(this.model.id)
     }
   }
 }

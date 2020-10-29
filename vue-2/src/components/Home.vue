@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { getRoutes } from '../router'
+import { getRoutes } from '@/router'
 
 export default {
   name: 'VueClassStoreDemo',

@@ -4,7 +4,7 @@
     <CodeView>
       examples/other/vuex/index.vue
       examples/other/vuex/store/index.ts
-      examples/other/vuex/store/modules/rectangle.js
+      examples/other/vuex/store/modules/rectangle.ts
     </CodeView>
     <hr>
     <RectangleView
