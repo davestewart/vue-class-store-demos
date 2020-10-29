@@ -8649,10 +8649,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-vue-class-store@^2.0.0:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/vue-class-store/-/vue-class-store-2.0.4.tgz#fabe622738aee274ed82481e57cde7f1e85cc093"
-  integrity sha512-XxLJaRU/aEhh4hL1Y+Pt8pPT1IUYjNn8MKyGWj5EUYA6AAe2qfy2UYjYJ8k38z7aBQgUCu98+wqJ0qIjRawedA==
+vue-class-store@^2.0.4:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/vue-class-store/-/vue-class-store-2.0.5.tgz#93fa468425d1fe0397ac36f96ffec39afcfd21c0"
+  integrity sha512-7DMhrackBfWOq+0x+pSZMIxnfbuq472KIm2Mnb3UEyZmgQ09xWEr9U2I+EgmCjX6zAa23lJzUcAH2HiALhHEQA==
 
 vue-eslint-parser@^7.0.0:
   version "7.1.0"
