@@ -8899,10 +8899,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-vue-class-store@vue-class-store@^3.0.0:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/vue-class-store/-/vue-class-store-2.0.3.tgz#c5a1e93aa7c92b5a585251f237105d6494006754"
-  integrity sha512-ZV92epgXXLsTJM0XZtEtDVhI8OSV4t2kQJba/pX6/WNB5VQesdVGSPAikFxNH7KnuYhAPEg409MlVfDzs7566Q==
+vue-class-store@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/vue-class-store/-/vue-class-store-3.0.0.tgz#64b5abffc7dee251d867872ff5d3cd106d06918a"
+  integrity sha512-OsAQUGOGgA7xwgSSrQ7R8oQpDV3HJ3lXEU7jGEIubkJzUrQAi0EaP1juvNe4wZuyWt5nUYesLWGOb+uFdOO+fQ==
 
 vue-cli-plugin-vue-next@~0.1.2:
   version "0.1.3"
